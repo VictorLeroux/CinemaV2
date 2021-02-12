@@ -1,0 +1,11 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}Hello FilmsController!{% endblock %}
+
+{% block body %}
+    {% for film in films %}
+        <p>Nom du film {{ film.name }}</p>
+        <p>Sa catégorie est {{ film.categories }}</p>
+        <p>Son acteur principal est {{ film.actors }}</p>
+    {% endfor %}
+{% endblock %}
